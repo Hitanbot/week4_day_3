@@ -1,0 +1,9 @@
+
+
+<% for student in @students %>
+  <p> Name: <%= student.pretty_name() %></p>
+  <p> Student Info:<%= student.house() %> Age: <%= student.age() %></p>
+  <p><a href="/students/<%= student.id %>">Show student</a></p>
+  <p><a href="/students/<%= student.id %>/edit">Edit student</a></p>
+  <hr/>
+<% end %>
